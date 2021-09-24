@@ -82,6 +82,8 @@ img {
   color: var(--primary-text-color);
   padding-top: 32px;
   padding-bottom: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .first-part-logo,
@@ -92,6 +94,7 @@ img {
 .footer-contact:hover,
 .footer-contact:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .section {
@@ -148,15 +151,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-}
-
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -233,10 +227,32 @@ a .portfolio-project-kind {
   margin: 0;
 }
 
-.hero {
-  background-color: var(--secondary-dark-bg-color);
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/herobg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 200px 0;
   text-align: center;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.hero {
+  background-color: var(--secondary-dark-bg-color);
 }
 
 .footer {
@@ -408,6 +424,12 @@ a .portfolio-project-kind {
   margin-bottom: 30px;
 }
 
+.portfolio-item-list:hover,
+.portfolio-item-list:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06),
+    0 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .portfolio-item-list:nth-child(3n) {
   margin-right: 0;
 }
@@ -420,4 +442,123 @@ a .portfolio-project-kind {
   border: 1px solid #eeeeee;
   border-top: 0;
   padding: 20px 24px 20px 24px;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 12px;
+  color: currentColor;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  color: currentColor;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.connect {
+  margin-left: 70px;
+}
+
+.connect-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.connect-list {
+  display: flex;
+}
+
+.connect-item {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.social-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #afb1b8;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-item:hover,
+.social-item:focus {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
+.connect-item:hover,
+.connect-item:focus {
+  background-color: var(--accent-color);
+  fill: #ffffff;
+}
+
+.connect-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.connect-link {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link {
+  width: 20px;
+  height: 20px;
+  color: currentColor;
+}
+
+.instagram-icon,
+.twitter-icon,
+.facebook-icon,
+.linkedin-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.social-instagram-icon,
+.social-twitter-icon,
+.social-facebook-icon,
+.social-linkedin-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  color: currentColor;
 }
