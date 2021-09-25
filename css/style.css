@@ -419,13 +419,17 @@ a .portfolio-project-kind {
 }
 
 .portfolio-item-list {
-  width: calc((100% - 60) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
 
-.portfolio-item-list:hover,
-.portfolio-item-list:focus {
+.portfolio-link {
+  display: inline-block;
+  width: calc((100% - 60) / 3);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0 4px 4px rgba(0, 0, 0, 0.06),
     0 1px 1px rgba(0, 0, 0, 0.12);
 }
@@ -461,6 +465,7 @@ a .portfolio-project-kind {
 }
 
 .footer-container {
+  align-items: baseline;
   display: flex;
 }
 
@@ -471,10 +476,9 @@ a .portfolio-project-kind {
 .connect-text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
-  padding-top: 20px;
   margin-bottom: 20px;
 }
 
@@ -483,13 +487,6 @@ a .portfolio-project-kind {
 }
 
 .connect-item {
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -502,12 +499,6 @@ a .portfolio-project-kind {
 }
 
 .social-item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: auto;
   margin-bottom: auto;
   color: #afb1b8;
@@ -517,14 +508,14 @@ a .portfolio-project-kind {
   margin-right: 10px;
 }
 
-.social-item:hover,
-.social-item:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
   color: #ffffff;
 }
 
-.connect-item:hover,
-.connect-item:focus {
+.connect-link:hover,
+.connect-link:focus {
   background-color: var(--accent-color);
   fill: #ffffff;
 }
@@ -534,13 +525,22 @@ a .portfolio-project-kind {
 }
 
 .connect-link {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-link {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: currentColor;
 }
 
@@ -591,23 +591,28 @@ a .portfolio-project-kind {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
 }
 
 .client-item {
   width: 170px;
   height: 92px;
-  margin-top: 50px;
+}
+
+.client-link {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 170px;
+  height: 92px;
   color: #afb1b8;
   fill: #afb1b8;
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
 }
